@@ -1,0 +1,30 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "sub": true,
+  "undef": true,
+  "boss": true,
+  "eqnull": true,
+  "node": true,
+  "globals": {
+    "jasmine"    : false,
+    "spyOn"      : false,
+    "it"         : false,
+    "describe"   : false,
+    "expect"     : false,
+    "beforeEach" : false,
+    "afterEach"  : false,
+    "waits"      : false,
+    "waitsFor"   : false,
+    "runs"       : false,
+    "document"   : false,
+    "prompt"     : false,
+    "suite"      : false,
+    "setup"      : false,
+    "test"       : false
+  }
+}
