@@ -38,3 +38,6 @@ jspm_packages
 
 # Build output director
 tmp
+
+#idea
+.idea
