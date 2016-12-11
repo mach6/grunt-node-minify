@@ -1,6 +1,8 @@
+[![Build Status](https://travis-ci.org/mach6/grunt-node-minify.svg?branch=master)](https://travis-ci.org/mach6/grunt-node-minify)
+
 # grunt-node-minify
 
-> Grunt plugin for [node-minify](https://github.com/srod/node-minify)
+Grunt plugin for [node-minify](https://github.com/srod/node-minify)
 
 ## Getting Started
 This plugin requires Grunt `>=1.0.0`
@@ -88,4 +90,7 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_1.0.0_
+_1.0.0_ (TBD)
+
+## License
+[MIT](LICENSE)
