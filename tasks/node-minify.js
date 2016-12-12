@@ -55,7 +55,9 @@ module.exports = function(grunt) {
               grunt.log.error(err);
               reject('error');
             }
-            grunt.log.writeln(min);
+            if (process.env.GRUNT_NODE_MINIFY_VERBOSE) {
+              grunt.log.writeln(min);
+            }
             resolve('success');
           }
         });
