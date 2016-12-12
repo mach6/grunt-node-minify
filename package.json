@@ -16,11 +16,10 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">= 0.12.0"
+    "node": ">= 5.0.0"
   },
   "scripts": {
-    "test": "grunt test",
-    "build": "grunt default"
+    "test": "grunt default"
   },
   "dependencies": {
     "google-closure-compiler-js": "^20161201.0.0",
