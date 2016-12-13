@@ -1,4 +1,9 @@
+[![NPM Version](https://img.shields.io/npm/v/grunt-node-minify.svg)](https://www.npmjs.com/package/grunt-node-minify)
 [![Build Status](https://travis-ci.org/mach6/grunt-node-minify.svg?branch=master)](https://travis-ci.org/mach6/grunt-node-minify)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d7651007f77b403f918699657c4a711d)](https://www.codacy.com/app/dougsimmons/grunt-node-minify?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mach6/grunt-node-minify&amp;utm_campaign=Badge_Grade)
+
+[![Dependency Status](https://david-dm.org/mach6/grunt-node-minify/status.svg)](https://david-dm.org/mach6/grunt-node-minify)
+[![devDependency Status](https://david-dm.org/mach6/grunt-node-minify/dev-status.svg)](https://david-dm.org/mach6/grunt-node-minify?type=dev)
 
 # grunt-node-minify
 
