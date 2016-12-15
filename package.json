@@ -24,7 +24,8 @@
   "dependencies": {
     "google-closure-compiler-js": "^20161201.0.0",
     "node-minify": "^2.0.2",
-    "bluebird": "^3.4.6"
+    "bluebird": "^3.4.6",
+    "chalk": "^1.1.1"
   },
   "devDependencies": {
     "grunt": "^1.0.0",

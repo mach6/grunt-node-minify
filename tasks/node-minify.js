@@ -9,6 +9,7 @@
 'use strict';
 var compressor = require ('node-minify');
 var Promise = require ('bluebird');
+var chalk = require('chalk');
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('node-minify', 'Grunt plugin for node_minify', function() {
@@ -65,11 +66,11 @@ module.exports = function(grunt) {
 
       minify.then(function (result) {
         if (result === 'success' && grunt.file.exists(file.dest)) {
-          grunt.log.ok('File "' + file.dest + '" created.');
+          grunt.log.ok('File ' + chalk.cyan(file.dest) + ' created.');
           done();
         }
       }, function (result) {
-          grunt.log.warn('Failed to create file "' + file.dest + '" due to ' + result + '.');
+          grunt.log.warn('Failed to create file ' +  chalk.yellow(file.dest) + ' due to ' + result + '.');
           done(false);
       });
 
