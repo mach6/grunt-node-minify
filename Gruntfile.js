@@ -85,6 +85,18 @@ module.exports = function(grunt) {
         files: {
           'tmp/sqwish_one.css': ['test/css/**/*.css']
         }
+      },
+      cleancss: {
+        compressor: 'clean-css',
+        files: {
+          'tmp/cleancss_one.css': ['test/css/**/*.css']
+        }
+      },
+      csso: {
+        compressor: 'csso',
+        files: {
+          'tmp/csso_one.css': ['test/css/**/*.css']
+        }
       }
     },
 

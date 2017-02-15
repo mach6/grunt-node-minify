@@ -43,6 +43,14 @@ suite('#grunt-node-minify', function() {
     assert.equal(grunt.file.exists('tmp/sqwish_one.css'), true);
   });
 
+  test('cleancss should exist', function() {
+    assert.equal(grunt.file.exists('tmp/cleancss_one.css'), true);
+  });
+
+  test('csso should exist', function() {
+    assert.equal(grunt.file.exists('tmp/csso_one.css'), true);
+  });
+
   test('no-compress should exist', function() {
     assert.equal(grunt.file.exists('tmp/no-compress.js'), true);
   });

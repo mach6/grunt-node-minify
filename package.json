@@ -1,7 +1,7 @@
 {
   "name": "grunt-node-minify",
   "description": "Grunt plugin for node-minify",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": {
     "name": "Doug Simmons",
     "email": "doug@mach6.net",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "google-closure-compiler-js": "^20170124.0.0",
-    "node-minify": "^2.0.2",
+    "node-minify": "^2.0.3",
     "bluebird": "^3.4.7",
     "chalk": "^1.1.3"
   },
