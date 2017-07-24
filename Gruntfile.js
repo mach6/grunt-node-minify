@@ -97,6 +97,17 @@ module.exports = function(grunt) {
         files: {
           'tmp/csso_one.css': ['test/css/**/*.css']
         }
+      },
+      butternut: {
+        compressor: 'butternut',
+        files: {
+          'tmp/buternut-js_min.js': ['test/**/*.js']
+        },
+        options: {
+          check: false,
+          allowDangerousEval: false,
+          sourceMap: true
+        }
       }
     },
 

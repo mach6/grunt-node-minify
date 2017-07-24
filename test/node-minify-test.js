@@ -55,4 +55,9 @@ suite('#grunt-node-minify', function() {
     assert.equal(grunt.file.exists('tmp/no-compress.js'), true);
   });
 
+  test('butternut should exist', function() {
+    assert.equal(grunt.file.exists('tmp/buternut-js_min.js'), true);
+    assert.equal(grunt.file.exists('tmp/buternut-js_min.js.map'), true);
+  });
+
 });
