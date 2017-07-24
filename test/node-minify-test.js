@@ -2,7 +2,7 @@
  * grunt-node-minify
  *
  *
- * Copyright (c) 2016 Doug Simmons
+ * Copyright (c) 2016-2017 Doug Simmons
  * Licensed under the MIT license.
  */
 

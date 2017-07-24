@@ -25,6 +25,7 @@
     "prompt"     : false,
     "suite"      : false,
     "setup"      : false,
-    "test"       : false
+    "test"       : false,
+    "Promise"    : false
   }
 }

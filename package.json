@@ -22,7 +22,6 @@
     "test": "grunt default"
   },
   "dependencies": {
-    "bluebird": "^3.5.0",
     "chalk": "^2.0.1",
     "google-closure-compiler-js": "^20170626.0.0",
     "node-minify": "^2.2.0"

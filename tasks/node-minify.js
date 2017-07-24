@@ -2,13 +2,12 @@
  * grunt-node-minify
  *
  *
- * Copyright (c) 2016 Doug Simmons
+ * Copyright (c) 2016-2017 Doug Simmons
  * Licensed under the MIT license.
  */
 
 'use strict';
 var compressor = require ('node-minify');
-var Promise = require ('bluebird');
 var chalk = require('chalk');
 
 module.exports = function(grunt) {
@@ -40,39 +39,35 @@ module.exports = function(grunt) {
       if (input.length < 1) {
         grunt.log.warn('Failed. No source files to minify.');
         done(false);
-      }
-
-      var minify = new Promise(function (resolve, reject) {
+      } else {
         compressor.minify({
-          compressor: (data.compressor !== undefined ? data.compressor : 'gcc'),
-          input: input,
-          output: file.dest,
-          sync: (data.sync !== undefined ? data.sync : false),
-          buffer: (data.buffer !== undefined ? data.buffer : 1024 * 1000),
-          publicFolder: data.publicFolder,
-          options: options,
-          callback: function (err, min) {
-            if (err) {
-              grunt.log.error(err);
-              reject('error');
+            compressor: (data.compressor !== undefined ? data.compressor : 'gcc'),
+            input: input,
+            output: file.dest,
+            sync: (data.sync !== undefined ? data.sync : false),
+            buffer: (data.buffer !== undefined ? data.buffer : 1024 * 1000),
+            publicFolder: data.publicFolder,
+            options: options,
+            callback: function (err, min) {
+              if (err) {
+                grunt.log.error(err);
+              }
+              if (process.env.GRUNT_NODE_MINIFY_VERBOSE) {
+                grunt.log.writeln(min);
+              }
             }
-            if (process.env.GRUNT_NODE_MINIFY_VERBOSE) {
-              grunt.log.writeln(min);
+          })
+          .then(function (result) {
+            if (grunt.file.exists(file.dest)) {
+              grunt.log.ok('File ' + chalk.cyan(file.dest) + ' created.');
+              done();
             }
-            resolve('success');
-          }
-        });
-      });
-
-      minify.then(function (result) {
-        if (result === 'success' && grunt.file.exists(file.dest)) {
-          grunt.log.ok('File ' + chalk.cyan(file.dest) + ' created.');
-          done();
-        }
-      }, function (result) {
-          grunt.log.warn('Failed to create file ' +  chalk.yellow(file.dest) + ' due to ' + result + '.');
-          done(false);
-      });
+          })
+          .catch(function (error) {
+            grunt.log.warn('Failed to create file ' +  chalk.yellow(file.dest) + ' due to ' + error + '.');
+            done(false);
+          });
+      }
 
     });
   });
