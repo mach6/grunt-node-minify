@@ -32,7 +32,7 @@ module.exports = function(grunt) {
       gcc: {
         files: {
           'tmp/gcc_min.js': ['test/**/*.js']
-        },
+        }
       },
       nocompress: {
         compressor: 'no-compress',
