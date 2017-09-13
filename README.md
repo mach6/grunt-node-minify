@@ -95,6 +95,7 @@ grunt.initConfig({
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+- _1.2.3_ : Updates dependencies (google-closure-compiler-js).
 - _1.2.2_ : Updates dependencies (google-closure-compiler-js, chalk).
 - _1.2.1_ : Updates dependencies.
 - _1.2.0_ : Remove bluebird dependency. Fix bugs.
