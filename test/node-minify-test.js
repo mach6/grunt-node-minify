@@ -23,8 +23,8 @@ suite('#grunt-node-minify', function() {
     assert.equal(grunt.file.exists('tmp/gcc-legacy_min.js'), true);
   });
 
-  test('babili_min should exist', function() {
-    assert.equal(grunt.file.exists('tmp/babili_min.js'), true);
+  test('babel_minify should exist', function() {
+    assert.equal(grunt.file.exists('tmp/babel_minify.js'), true);
   });
 
   test('uglifyjs_min should exist', function() {

@@ -60,10 +60,10 @@ module.exports = function(grunt) {
           'tmp/uglifyjs_min.js': ['test/**/*.js']
         }
       },
-      babili: {
-        compressor: 'babili',
+      babelminify: {
+        compressor: 'babel-minify',
         files: {
-          'tmp/babili_min.js': ['test/**/*.js']
+          'tmp/babel_minify.js': ['test/**/*.js']
         }
       },
       //requires java
