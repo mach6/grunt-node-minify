@@ -95,6 +95,7 @@ grunt.initConfig({
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+- _1.3.2_ : Updates dependencies (node-minify).
 - _1.3.1_ : Updates dependencies (chalk).
 - _1.3.0_ : Updates dependencies (node-minify, chalk).
 - _1.2.4_ : Updates dependencies (google-closure-compiler-js, node-minify).
