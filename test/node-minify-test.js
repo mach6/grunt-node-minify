@@ -31,6 +31,10 @@ suite('#grunt-node-minify', function() {
     assert.equal(grunt.file.exists('tmp/uglifyjs_min.js'), true);
   });
 
+  test('uglifyes_min should exist', function() {
+    assert.equal(grunt.file.exists('tmp/uglifyes_min.js'), true);
+  });
+
   test('yui-js_min should exist', function() {
     assert.equal(grunt.file.exists('tmp/yui-js_min.js'), true);
   });
@@ -51,6 +55,10 @@ suite('#grunt-node-minify', function() {
     assert.equal(grunt.file.exists('tmp/csso_one.css'), true);
   });
 
+  test('crass should exist', function() {
+    assert.equal(grunt.file.exists('tmp/crass_one.css'), true);
+  });
+
   test('no-compress should exist', function() {
     assert.equal(grunt.file.exists('tmp/no-compress.js'), true);
   });
@@ -58,6 +66,10 @@ suite('#grunt-node-minify', function() {
   test('butternut should exist', function() {
     assert.equal(grunt.file.exists('tmp/buternut-js_min.js'), true);
     assert.equal(grunt.file.exists('tmp/buternut-js_min.js.map'), true);
+  });
+
+  test('htmlminifier should exist', function() {
+    assert.equal(grunt.file.exists('tmp/htmlminifier.html'), true);
   });
 
 });

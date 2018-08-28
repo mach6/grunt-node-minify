@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     'node-minify': {
       gcc: {
         files: {
-          'tmp/gcc_min.js': ['test/**/*.js']
+          'tmp/gcc_min.js': ['test/js/**/*.js']
         }
       },
       nocompress: {
@@ -58,6 +58,12 @@ module.exports = function(grunt) {
         compressor: 'uglifyjs',
         files: {
           'tmp/uglifyjs_min.js': ['test/**/*.js']
+        }
+      },
+      uglifyes: {
+        compressor: 'uglify-es',
+        files: {
+          'tmp/uglifyes_min.js': ['test/**/*.js']
         }
       },
       babelminify: {
@@ -98,6 +104,12 @@ module.exports = function(grunt) {
           'tmp/csso_one.css': ['test/css/**/*.css']
         }
       },
+      crass: {
+        compressor: 'crass',
+        files: {
+          'tmp/crass_one.css': ['test/css/**/*.css']
+        }
+      },
       butternut: {
         compressor: 'butternut',
         files: {
@@ -108,7 +120,13 @@ module.exports = function(grunt) {
           allowDangerousEval: false,
           sourceMap: true
         }
-      }
+      },
+      htmlminifier: {
+        compressor: 'html-minifier',
+        files: {
+          'tmp/htmlminifier.html': ['test/html/**/*.html']
+        }
+      },
     },
 
     mochacli: {
