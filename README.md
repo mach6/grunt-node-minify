@@ -95,6 +95,7 @@ grunt.initConfig({
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+- _1.5.0_ : Updates dependencies (google-closure-compiler-js).
 - _1.4.0_ : Updates dependencies (node-minify, google-closure-compiler-js, and others).
 - _1.3.6_ : Updates dependencies (google-closure-compiler-js).
 - _1.3.5_ : Updates dependencies (google-closure-compiler-js).

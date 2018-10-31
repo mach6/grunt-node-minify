@@ -1,7 +1,7 @@
 {
   "name": "grunt-node-minify",
   "description": "Grunt plugin for node-minify",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "author": {
     "name": "Doug Simmons",
     "email": "doug@mach6.net",
@@ -23,13 +23,13 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "google-closure-compiler-js": "^20180610.0.0",
+    "google-closure-compiler-js": "^20181008.0.0",
     "node-minify": "^3.4.0"
   },
   "devDependencies": {
     "grunt": "^1.0.3",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-jshint": "^2.0.0",
     "grunt-mocha-cli": "^4.0.0"
   },
   "keywords": [
